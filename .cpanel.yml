@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+  - export DEPLOYPATH=home/jbb9qrotuvfr/public_html/dananer.io
+  - /bin/cp * $DEPLOYPATH
