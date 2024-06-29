@@ -1,5 +1,5 @@
 <?php
-
+// Define a secret token for verification
 $secret_token = "junaidbhattiToken1109";
 
 // Verify the request
