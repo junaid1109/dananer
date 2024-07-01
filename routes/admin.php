@@ -12,7 +12,7 @@ Route::namespace('App\Http\Controllers\Admin\Auth')->name('admin.')->group(funct
     Route::middleware('guest')->group(function () {
         Route::controller('LoginController')->group(function () {
             Route::get('/', 'showLoginForm')->name('login');
-            Route::post('/', 'login')->name('login');
+            Route::post('/check', 'login')->name('login');
             Route::get('logout', 'logout')->middleware('admin')->withoutMiddleware('admin.guest')->name('logout');
         });
 

@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="justify-content-between cron-btn-group d-flex gap-2">
-                    <a href="{{ url('admin.cron.index') }}" class="btn btn-outline--primary  w-100 h-45"><i class="fas fa-cog"></i> @lang('Cron Job Setting')</a>
+                    <a href="{{ url('admin/cron') }}" class="btn btn-outline--primary  w-100 h-45"><i class="fas fa-cog"></i> @lang('Cron Job Setting')</a>
                     <a href="{{ url('cron') }}?target=all" class="btn btn-outline--warning w-100 h-45"><i class="fas fa-bolt"></i> @lang('Run Manually')</a>
                 </div>
             </div>

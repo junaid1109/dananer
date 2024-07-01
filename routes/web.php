@@ -2,13 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\CronController;
 
 Route::get('/clear', function () {
     \Illuminate\Support\Facades\Artisan::call('optimize:clear');
 });
 
 
-Route::get('cron', 'CronController@cron')->name('cron');
+Route::get('cron',[CronController::class,'cron'])->name('cron');
 
 // User Support Ticket
 Route::controller('App\Http\Controllers\TicketController')->prefix('ticket')->name('ticket.')->group(function () {
